@@ -30,7 +30,5 @@ variable "subnet_id" {
 }
 
 variable "ingress_ports" {
-    type = list(number)
-    description = "List of allowed ports"
-    default = [22]
+
 }
