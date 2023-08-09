@@ -1,4 +1,4 @@
-vpc/
+vpc1/
 *.tfstate
 *.tfstate.*
 .terraform/
