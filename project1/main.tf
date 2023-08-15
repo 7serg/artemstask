@@ -9,7 +9,7 @@ module "vpc" {
 module "bastion" {
     source = "./modules/bastion"
     vpc_id = module.vpc.vpc_id
-    subnet_id = module.vpc.public_subnets[0]
+    subnet_id = module.vpc.public_subnets[var.public_subnets_cidr[0]]
     ami_id = var.ami_id
     instance_type = var.instance_type
     public_key = var.public_key
