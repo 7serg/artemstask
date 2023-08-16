@@ -103,7 +103,7 @@ resource "aws_route_table" "privat_rt" {
  
   route {
     cidr_block = "0.0.0.0/0"
-    gateway_id = aws_nat_gateway.for_private_subnets.id
+    nat_gateway_id = aws_nat_gateway.for_private_subnets.id
   }
   tags = {
     Name = "Private route table for ${var.vpc_name}"

@@ -48,3 +48,9 @@ variable "ami_id" {
 variable "instance_type" {
     type = string  
 }
+
+variable "private_host_ami" {
+  type = string
+  default = "ami-0c4c4bd6cf0c5fe52"
+  
+}
