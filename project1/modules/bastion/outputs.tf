@@ -5,3 +5,7 @@ output "bastion_server_ip" {
 output "bastion_sg_id" {
   value = aws_security_group.bastion_server.id
 }
+
+output "ssh_key_name" {
+  value = aws_key_pair.test_ssh_key.key_name
+}

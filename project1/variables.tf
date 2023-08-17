@@ -54,3 +54,11 @@ variable "private_host_ami" {
   default = "ami-0c4c4bd6cf0c5fe52"
   
 }
+
+
+
+variable "ssh_key_name" {
+    type = string
+  
+}
+
